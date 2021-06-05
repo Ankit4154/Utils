@@ -51,6 +51,11 @@ public class DailyTask {
 		}
 		// Writing the newlines back to the file having modified first line
 		Files.write(Paths.get(finalFile.getAbsolutePath()).toAbsolutePath(), newLines, StandardCharsets.UTF_8);
+		
+		// Getting runtime object to open newly created file in notepad++
+		Runtime rs = Runtime.getRuntime();
+		rs.exec("notepad++ "+finalFile.getAbsolutePath());
+		rs.exit(0);
 
 	}
 }
