@@ -12,9 +12,6 @@ import java.util.List;
 public class DailyTask {
 
 	public static void main(String args[]) throws IOException {
-		
-		// Let's add some sysos on top for testing
-		System.out.println("hello ");
 
 		// Getting list of Files from current directory
 		File[] files = new File("<Enter your file system path to DailyTask folder>").listFiles();
