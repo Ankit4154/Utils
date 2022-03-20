@@ -55,7 +55,6 @@ public class DailyTask {
 		// Getting runtime object to open newly created file in notepad++
 		Runtime rs = Runtime.getRuntime();
 		rs.exec("notepad++ "+finalFile.getAbsolutePath());
-		System.out.println("testing syso");
 		rs.exit(0);
 
 	}
